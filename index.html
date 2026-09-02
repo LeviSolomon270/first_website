@@ -1,29 +1,75 @@
-<IDOCTYPE html>
-<html
-lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8":
-    <meta name="viewport" content-"width-device-width, initial-scale-1.0"> 
-    <title>Weather Site</title:
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
 </head>
 <body>
-<h1 title-"heading">[Breaking News]- Latest on the weather</h1>
- <h2>Cape Town Weather</h2>
 
- <!-- This is a simple weather update page -->
+<h1 title="heading">[Breaking News] - Latest on the weather</h1>
+<h2>Cape Town Weather</h2>
+
+<!-- This is a simple weather update page -->
 
 <p title="Today's forecast">
-    The bright sun shines in a clear blue sky today in <strong>Rondebosch, Cape Town.</strong> cbr>cbr>
-    <em>Gentle east winds</em> blow softly while the temperature sits at a <strong>varm and pleasant 20C.</strong) 
-    </p>
+    The bright sun shines in a clear blue sky today in <strong>Rondebosch, Cape Town.</strong><br><br>
+    <em>Gentle east winds</em> blow softly while the temperature sits at a <strong>warm and pleasant 20&deg;C.</strong>
+</p>
+
+<form name="myform" id="myform" method="post" action="/cgi-bin/myform.cgi" enctype="text/plain" target="_blank">
+
+    <label for="firstName">First name</label>
+    <input type="text" name="firstName" id="firstName" required maxlength="30" autocomplete="given-name">
+
+    <label for="city">City</label>
+    <select name="city" id="city">
+        <option value="jhb">Johannesburg</option>
+        <option value="dbn">Durban</option>
+    </select>
+
+    <input type="submit" value="Send">
+
+</form>
 
 <ul>
-<li>Home</li>
-<li>About Us</li>
-<li>Products and Services</li>
-<li>Gallery</li>
-<li>Contact Us</li>
+    <li>Home</li>
+    <li>About Us</li>
+    <li>Products and Services</li>
+    <li>Gallery</li>
+    <li>Contact Us</li>
 </ul>
 
-</body> 
+<p>Total: <span class="price">R 199</span></p>
+
+<div class="card">
+    <h3>Starter plan</h3>
+    <p>Good for small projects.</p>
+</div>
+
+<form name="contact" id="contact" method="post" action="/submit" autocomplete="on">
+    <fieldset>
+        <legend>Contact us</legend>
+
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" required maxlength="60">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+            <option value="support">Support</option>
+            <option value="sales">Sales</option>
+            <option value="general">General</option>
+        </select>
+
+        <input type="submit" value="Send">
+    </fieldset>
+</form>
+
+<a href="mailto:info@nnn.co.za?subject=Enquiry%20from%20web%20site">Email Us</a>
+<a href="https://www.weathersa.co.za" target="_blank">Visit WeatherSA</a>
+
+</body> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d151189.78103216377!2d18.496017360332356!3d-33.786840204590575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1788348900594!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </html>
