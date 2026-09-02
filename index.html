@@ -3,73 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Site</title>
+    <title>NNN | Home - Latest on the Weather</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1 title="heading">[Breaking News] - Latest on the weather</h1>
-<h2>Cape Town Weather</h2>
+<header>
+    <h1 title="heading">[Breaking News] - Latest on the Weather</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products and Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
 
-<!-- This is a simple weather update page -->
+<main>
+    <article>
+        <h2>Snow Covers the 'berg &ndash; Prepare for the Cold</h2>
 
-<p title="Today's forecast">
-    The bright sun shines in a clear blue sky today in <strong>Rondebosch, Cape Town.</strong><br><br>
-    <em>Gentle east winds</em> blow softly while the temperature sits at a <strong>warm and pleasant 20&deg;C.</strong>
-</p>
+        <a href="https://www.weathersa.co.za" target="_blank">
+            <img src="_images/main_story_pic.jpg" alt="A picture of snow on the Drakensberg" width="500">
+        </a>
+        <p><em>Click the photo to check the live forecast on WeatherSA.</em></p>
 
-<form name="myform" id="myform" method="post" action="/cgi-bin/myform.cgi" enctype="text/plain" target="_blank">
+        <p title="Today's forecast">
+            The cold front approaching the WC is likely to make landfall tonight, Sunday evening,
+            bringing with it further cold temperatures to Cape Town, as well as a predicted 2 cm of snow
+            to the highest elevations of Table Mountain if the weather pattern stays on course. The high
+            mountains of Ceres, Matroosberg, Worcester, and potentially well into Franschhoek should all
+            experience some snow activity Monday morning into Monday afternoon. The snowfall may extend
+            further up into the NC with potential snowfall in the Hantamsberg region and Calvinia. Tuesday
+            morning the snowfall could very well reach out over the Kouggaberge and Tsitsikamma mountains.
+            More than likely the snowfall will all be under 5 cm and at higher elevations, but please send
+            us your photos and snow reports as they happen.
+        </p>
 
-    <label for="firstName">First name</label>
-    <input type="text" name="firstName" id="firstName" required maxlength="30" autocomplete="given-name">
+        <h3>Global Digital Network is part of the &ldquo;News Now Network&rdquo; (NNN)</h3>
+    </article>
 
-    <label for="city">City</label>
-    <select name="city" id="city">
-        <option value="jhb">Johannesburg</option>
-        <option value="dbn">Durban</option>
-    </select>
+    <section>
+        <h2>Live Weather Map</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d151189.78103216377!2d18.496017360332356!3d-33.786840204590575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1788348900594!5m2!1sen!2sza"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </section>
 
-    <input type="submit" value="Send">
+    <aside>
+        <h2>Get Weather Alerts</h2>
+        <form name="myform" id="myform" method="post" action="/cgi-bin/myform.cgi" enctype="text/plain" target="_blank">
+            <fieldset>
+                <legend>Sign up for alerts</legend>
 
-</form>
+                <label for="firstName">First name</label>
+                <input type="text" name="firstName" id="firstName" required maxlength="30" autocomplete="given-name">
 
-<ul>
-    <li>Home</li>
-    <li>About Us</li>
-    <li>Products and Services</li>
-    <li>Gallery</li>
-    <li>Contact Us</li>
-</ul>
+                <label for="city">City</label>
+                <select name="city" id="city">
+                    <option value="jhb">Johannesburg</option>
+                    <option value="dbn">Durban</option>
+                    <option value="ct">Cape Town</option>
+                </select>
 
-<p>Total: <span class="price">R 199</span></p>
+                <input type="submit" value="Sign Up">
+            </fieldset>
+        </form>
+    </aside>
+</main>
 
-<div class="card">
-    <h3>Starter plan</h3>
-    <p>Good for small projects.</p>
-</div>
+<footer>
+    <p><a href="mailto:info@nnn.co.za?subject=Enquiry%20from%20web%20site">Email Us</a></p>
+    <p>&copy; 2026 Global Digital Network (NNN)</p>
+</footer>
 
-<form name="contact" id="contact" method="post" action="/submit" autocomplete="on">
-    <fieldset>
-        <legend>Contact us</legend>
-
-        <label for="name">Full name</label>
-        <input type="text" id="name" name="name" required maxlength="60">
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="topic">Topic</label>
-        <select id="topic" name="topic">
-            <option value="support">Support</option>
-            <option value="sales">Sales</option>
-            <option value="general">General</option>
-        </select>
-
-        <input type="submit" value="Send">
-    </fieldset>
-</form>
-
-<a href="mailto:info@nnn.co.za?subject=Enquiry%20from%20web%20site">Email Us</a>
-<a href="https://www.weathersa.co.za" target="_blank">Visit WeatherSA</a>
-
-</body> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d151189.78103216377!2d18.496017360332356!3d-33.786840204590575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1788348900594!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</body>
 </html>
